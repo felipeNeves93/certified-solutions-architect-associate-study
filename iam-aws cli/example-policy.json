@@ -1,0 +1,25 @@
+{
+    // This policy allows the user to create and manage S3 buckets.
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        // This statement allows the user to create S3 buckets.
+        "Effect": "Allow",
+        "Action": [
+          "s3:CreateBucket",
+          "s3:PutBucketPolicy"
+        ],
+        "Resource": "arn:aws:s3:::*"
+      },
+      {
+        // This statement allows the user to manage the contents of their S3 buckets.
+        "Effect": "Allow",
+        "Action": [
+          "s3:GetObject",
+          "s3:PutObject",
+          "s3:DeleteObject"
+        ],
+        "Resource": "arn:aws:s3:::*/*"
+      }
+    ]
+  }
