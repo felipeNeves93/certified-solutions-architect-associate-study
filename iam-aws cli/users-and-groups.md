@@ -13,3 +13,5 @@
 * **Users or Groups**: Can be assigned JSON Document called *polices*. Theses polices define the **permissions** of the users. 
 
 * **Least privilege principle**: In AWS, you apply the Least privilege principle. Don't give more permission than a user needs.
+
+[See this example of a policy file with comments.](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/iam-aws%20cli/example-policy.json)
