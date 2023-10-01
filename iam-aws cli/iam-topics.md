@@ -61,3 +61,21 @@
     * Virtual MFA device (Google Authenticator, Authy) (Multiple tokens on a single device)
     * Universal 2nd Factor (U2F) YubiKey, support for multiple root and IAM users using a single security key.
     * Hardware Key Fob MFA Device
+
+**IAM Roles for Services**
+
+* Some AWS services will need to perform actions on your behalf.
+* To do so, we will assign permissions to AWS Services with IAM Roles.
+* Common roles:
+    * ECS Instance Roles
+    * Lambda Function Roles
+    * Roles for CloudFormation
+
+**IAM Security Tools**
+
+* **IAM Credentials Report(account-level)**
+    * A report that lists all your accounts's users and the status of their various credentials
+
+* **IAM Access Advisor(user-level)**
+    * Access advisor shows the service permissions granted to a user and when those services were last accessed.
+    * You can use this information to revise your policies.
