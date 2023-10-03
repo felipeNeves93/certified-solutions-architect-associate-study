@@ -6,3 +6,6 @@ In this repo, i will upload my annotations about all the topics covered on the A
 * IAM Section
     * [IAM](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/iam-aws%20cli/iam-topics.md)
     * [AWS CLI](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/iam-aws%20cli/aws-cli-topics.md)
+* EC2 Section
+    * [EC2 Fundamentals](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2/ec2-fundamentals.md)
+
