@@ -1,20 +1,19 @@
+****
 **IAM Users and Groups**
 
 * **IAM**: Identity and access management, Global Service.
-
 * **Root Account**: Created by default, shouldn't be used or shared.
-
 * **Users**: Are people withing the organization, and can be grouped.
-
 * **Groups**: Only contains users, not other groups. Users don't have to belong to a group, and user can belong to multiple groups.
+****
 
 **IAM Permissions**
 
 * **Users or Groups**: Can be assigned JSON Document called *polices*. Theses polices define the **permissions** of the users. 
-
 * **Least privilege principle**: In AWS, you apply the Least privilege principle. Don't give more permission than a user needs.
 
 [See this example of a policy file with comments.](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/iam-aws%20cli/example-policy.json)
+****
 
 **IAM Policy Structure**
 
@@ -34,6 +33,7 @@
     **Example of a policy json file**
 
 ![Policy Example](./images/policy-example.png)
+****
 
 
 **IAM password Policy**
@@ -49,6 +49,7 @@
     * Allow all IAM users to change their own passwords
     * Require the user to change their password over a period of time
     * Prevent password re-use
+****
 
 **Multi Factor Authentication - MFA**
 
@@ -56,49 +57,11 @@
 * You want to protect your Root Accounts and IAM users
 * MFA = password you know + security device you own
 * Main benefit of MFA: if a password is stolen or hacked, the account is not compromised.
+****
 
 * **List of MFA device options:**
     * Virtual MFA device (Google Authenticator, Authy) (Multiple tokens on a single device)
     * Universal 2nd Factor (U2F) YubiKey, support for multiple root and IAM users using a single security key.
     * Hardware Key Fob MFA Device
-
-**IAM Roles for Services**
-
-* Some AWS services will need to perform actions on your behalf.
-* To do so, we will assign permissions to AWS Services with IAM Roles.
-* Common roles:
-    * ECS Instance Roles
-    * Lambda Function Roles
-    * Roles for CloudFormation
-
-**IAM Security Tools**
-
-* **IAM Credentials Report(account-level)**
-    * A report that lists all your accounts's users and the status of their various credentials
-
-* **IAM Access Advisor(user-level)**
-    * Access advisor shows the service permissions granted to a user and when those services were last accessed.
-    * You can use this information to revise your policies.
-
-**IAM Best Practices**
-
-* Don't use the root account
-* One physical user = One AWS user
-* Assign users to groups and assign permissions to groups
-* Create a **strong password policy**
-* Use and enforce the use of **MFA**
-* Create and use Roles for giving permissions to AWS services
-* Use Access Keys for Programmatic Access
-* Audit permissions of your account using IAM Credentials Report & IAM Access Advisor
-* **Never share IAM users & Access Keys** 
-
-**Summary**
-* **Users:** mapped to a physical user, has a password for AWS Console.
-* **Groups:** contains users only
-* **Policies:** JSON document that outlines permissions for users or groups
-* **Roles:** for AWS services or EC2 Instances
-* **Security:** MFA + Password Policy
-* **AWS CLI:** manage your AWS services using the command line
-* **AWS SDK:** manage your AWS services using a programming language
-* **Access Keys:** access AWS using the CLI or SDK
-* **Audit:** IAM Credential Reports & IAM Access Advisor
+    * Hardware Key Fob MFA Device for  AWS GovClouds
+****
