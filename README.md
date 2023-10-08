@@ -12,5 +12,6 @@ In this repo, i will upload my annotations about all the topics covered on the A
     * [EC2 Fundamentals](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2/ec2-fundamentals.md)
     * [EC2 Instances](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2/ec2-instances.md)
     * [Security Groups](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2/security-groups.md)
+    * [Public, Private and Elastic IPs](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2/private-public-elastic-ip.md)
 
 
