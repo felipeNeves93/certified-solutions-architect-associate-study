@@ -7,3 +7,6 @@
     * One public IPV4
     * One or more security groups
     * A MAC address
+* You can create ENI independently and attach then on the fly (move then) on EC2 instances 
+for failover
+* Bound to specific AZ

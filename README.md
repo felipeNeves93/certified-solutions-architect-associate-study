@@ -12,6 +12,7 @@ In this repo, i will upload my annotations about all the topics covered on the A
 * EC2 Section
     * [Elastic Network Interfaces](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2/elastic-network-interfaces.md)
     * [Fundamentals](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2/ec2-fundamentals.md)
+    * [Hibernate](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2/ec2-hibernate.md)
     * [Instances](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2/ec2-instances.md)
     * [Placement Groups](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2/ec2-placement-groups.md)
     * [Public, Private and Elastic IPs](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2/private-public-elastic-ip.md)
