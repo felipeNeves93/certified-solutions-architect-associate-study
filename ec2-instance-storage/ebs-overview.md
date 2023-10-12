@@ -28,3 +28,4 @@
     * By default, any other attached EBS Volume is not deleted (attribute disabled)
 * This can be controlled by the AWS Console / AWS CLI
 * **Use case: Preserve root volume when instance is terminated**
+****
