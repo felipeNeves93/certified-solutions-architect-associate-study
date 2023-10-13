@@ -61,6 +61,7 @@
 * EBS Volumes are characterized in Size|Throughput|IOPS (I/O Ops Per Sec)
 * When in doubt, always consult the AWS documentation
 * **Only gp2/gp3 and io1/io2 can be used as boot volumes**
+****
 
 **EBS Volume Types Use Cases**
 
@@ -96,3 +97,4 @@
         * For data that is infrequently accessed
         * Scenarios where lowest cost is important
         * **Max Throughput** 250 MiB/s - max IOPS 250
+****
