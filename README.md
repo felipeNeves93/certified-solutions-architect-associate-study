@@ -20,7 +20,7 @@ In this repo, i will upload my annotations about all the topics covered on the A
 
 * **EC2 Instance Storage Section**
     * [EBS Overview](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2-instance-storage/ebs-overview.md)
-    * [EBS Snapshots](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2-instance-storage/ebs-snapshots.md)
+    * [AMI](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2-instance-storage/ami-overview.md)
 
     
 
