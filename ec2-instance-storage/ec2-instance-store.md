@@ -12,3 +12,5 @@
 
 **Instance Store vs EBS**
 
+![EC2 Instance Store vs EBS](./images/instance-store-vs-ebs.png)
+
