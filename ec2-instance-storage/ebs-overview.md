@@ -87,7 +87,7 @@
     * io2 Block Express(4 GiB - 64 TiB):
         * Sub-millisecond latency
         * Max PIOPS: 256000 with an IOPS:GiB ratio of 1000:1
-* **Hard Dis Drives (HDD)**
+* **Hard Disk Drives (HDD)**
     * Cannot be a boot volume
     * 125 GiB to 16 TiB
     * Throughput Optimized HDD (st1)
