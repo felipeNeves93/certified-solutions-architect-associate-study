@@ -98,3 +98,35 @@
         * Scenarios where lowest cost is important
         * **Max Throughput** 250 MiB/s - max IOPS 250
 ****
+
+**EBS Multi-Attach - io1-io2 Family**
+
+* Attach the same EBS Volume to multiple EC2 instances in the same AZ
+* Each instance has full read & write permissions to the high-performance volume
+* Use Case:
+    * Achieve **higher application avaliability** in clustered Linux applications (ex: Teradata)
+    * Applications must manage concurrent write operations
+* **Up to 16 EC2 instances at a time**
+* Must use a filesystem that is cluster aware (not XFS, EXT4, etc...)
+****
+
+**EBS Encryption**
+
+* When you create an encrypted EBS Volume, you get the following:
+    * Data at rest is encrypred inside the volume
+    * All the data in flight moving between the instance and the volumes is encrypted
+    * All snapshots are encrypted
+    * All volumes created from the snapshot
+* Encryption and Decryption are handled transparently (you have nothing to do)
+* Encryption has a minimal impact on latency
+* EBS Encryption leverage keys from KMS (AES-256)
+* Copying an unencrypted snapshot allows encryption
+* Snapshots of encrypted volumes are encrypted
+
+**Encryption: Encrypt an unencrypted EBS Volume**
+
+* Create an EBS snapshot of the volume
+* Encrypt the EBS Snapshot (using copy) 
+* Create new EBS Volume from the snapshot (the volume will also be encrypted)
+* Now you can attach the encrypted volume to the original instance
+****
