@@ -45,3 +45,24 @@
     * Standard: Multi-AZ, great for prod
     * One Zone: One AZ, great for dev, backup enabled by default, compatible with IA (EFS One Zone-IA)
     * Over 90% in cost savings
+****
+
+**EBS vs EFS**
+
+* **EBS Volumes:**
+    * One instance (except multi-attach io1/io2)
+    * Are locked at the AZ level
+    * gp2: IO Increases if the disk size increases
+    * io1: Can increase IO independently
+    * To migrate a EBS Volume accross AZ:
+        * Take a spanshot
+        * Restore the snapshot to another AZ
+        * EBS Backups use IO and you shouldn't run them when your application is handling a lot of traffic
+    * Root EBS Volumes of instances get terminated by default if the EC2 instance gets terminated (can be disabled)
+* **EFS:**
+    * Mounting 100s of instances accross AZ
+    * EFS share website files (WordPress)
+    * Only for linux instances (POSIX)
+    * EFS has a higher price point than EBS
+    * Can leverage EFS-IA for cost savings
+    * Remember: EFS vs EBS vs Instance Store
