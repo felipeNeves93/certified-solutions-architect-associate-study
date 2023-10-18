@@ -23,7 +23,8 @@ In this repo, i will upload my annotations about all the topics covered on the A
     * [AMI](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2-instance-storage/ami-overview.md)
     * [EC2 Instance Store](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2-instance-storage/ec2-instance-store.md)
     * [EFS Overview](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2-instance-storage/efs-overview.md)
-
+* **ELB & ASG Section**
+     * [High Scalability & Avaliability](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/ec2-instance-storage/high-avaliability-scalability.md)
     
 
 
