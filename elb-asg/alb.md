@@ -8,7 +8,7 @@
 * Support redirects (from HTTP or HTTPS for example)
 * Routing tables to different target groups:
     * Routing based on path in URL (example.com/users & example.com/posts)
-    * Routing based on hostname in URL (one.example.com g& other.example.com)
+    * Routing based on hostname in URL (one.example.com & other.example.com)
     * Routing based on Query String, Headers (example.com/users?id=123&order=false)
 * ALB are a great fit for micro services & container-based application (example: Docker & Amazon ECS)
 * Has a port mapping feature to redirect to a dynamic port in ECS
@@ -26,3 +26,5 @@
 * IP Addresses - must be private IPs
 * ALB can route to multiple target groups
 * Health checks are at the target group level
+* Its a good practice to only allow traffic to your instances through the security group of the Load Balancer
+****

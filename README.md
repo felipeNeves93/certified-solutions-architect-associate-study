@@ -26,7 +26,8 @@ In this repo, i will upload my annotations about all the topics covered on the A
 * **ELB & ASG Section**
      * [High Scalability & Avaliability](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/elb-asg/high-avaliability-scalability.md)
      * [ELB Overview](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/elb-asg/elb-overview.md)
-     * [ALB](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/elb-asg/alb.md)
+     * [ALB (Application Load Balancer)](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/elb-asg/alb.md)
+     * [NLB (Network Load Balancer)](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/elb-asg/nlb.md)
     
 
 
