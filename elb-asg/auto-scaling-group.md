@@ -33,3 +33,30 @@
 * Based on the alarm:
   * We can create scale-out policies (increase the number of instances)
   * We can create scale-in policies (decrease the number of instances)
+****
+**Dynamic Scaling Policies**
+
+* **Target Tracking Scaling**
+  * Most simple and easy to set-up
+  * Example: I want the ASG CPU to stay at around 40%
+* **Simple / Step Scaling**
+  * When a CloudWatch alarm is triggered (example CPU > 70%), then add 2 units
+  * When a CloudWatch alarm is triggered (example CPU < 30%), ten remove 1
+* **Schedule Actions**
+  * Anticipate a scaling based on known usage patterns
+  * Example: Increase the min capacity to 10 at 2 pm on Fridays
+* **Predictive Scaling**
+  * Continuosly forecast load and shcedule scaling ahead
+
+**Good metrics to scale on**
+
+  * **CPUUtilization:** Average CPU utilization across your instances
+  * **RequestCountPerTarget:** To make sure the number of requests per EC2 instances is stable
+  * **Average Network In / Out:** If your application is network bound
+  * **Any custom metric:** That are pushed using CloudWatch
+
+**Scaling Cooldowns**
+
+* After a scaling activity happens, you are in the **cooldown period (default is 300 seconds)**
+* During the cooldown period, the ASG will not launch or terminate additional instances (to allow for metrics to stabilize)
+* Advice: Use a ready-to-use AMI to reduce configuration time in order to be serving request fasters and reduce the cooldown period
