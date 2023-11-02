@@ -38,3 +38,46 @@
 * Useful for applications with **unpredictable workloads**
 * Supports all RDS database engines (MariaDB, MySQL, PostgreSQL, SQL Server, Oracle)
 ****
+
+**RDS Read Replicas for read scalability**
+
+* Up to 15 read replicas
+* Within AZ, Cross AZ or Cross Region
+* Replication is **ASYNC**, so reads are eventually consistent
+* Replicas can be promoted to their own DB
+* Applications must update the connection string to leverage read replicas
+
+**Use Cases**
+
+* You have a production database that is taking on normal load
+* You want to run a reporting application to run some analytics
+* You create a Read Replica to run the new worload there
+* The production application is unaffected
+* Read replicas are used for SELECT (read) only kind of statements, not CRUD operations
+
+![Use Cases](./images/rds-use-case.png)
+
+**Network Cost**
+
+* In AWS there's a network cost when data goes from one AZ to another
+* **For RDS Read Replicas withing the same region, you don't pay that fee**
+
+**Mutli AZ Disaster Recovery**
+
+* **Sync** Replication
+* One DNS name - Automatic app failover to standby
+* Increase **avaliability**
+* Failover in case of loss of AZ, loss of network, instance or storage failure
+* No manual intervention in apps
+* Not used for scaling
+* The read replicas must be setup as Multi AZ for Disaster Recovery (DR)
+
+**From Single-AZ to Multi-AZ**
+
+* Zero downtime operation (No need to stop the DB)
+* Just click on modify for the database
+* The following happens internally
+  * A snashot is taken
+  * A new DB is restored from the snapshot in a new AZ
+  * Synchronization is established between the two databases
+**** 
