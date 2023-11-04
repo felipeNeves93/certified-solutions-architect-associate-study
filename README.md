@@ -31,7 +31,8 @@ In this repo, i will upload my annotations about all the topics covered on the A
      * [GLWB (Gateway Load Balancer)](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/elb-asg/gwlb.md)
      * [ASG (Auto Scaling Group)](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/elb-asg/auto-scaling-group.md)
 * **Databases Fundamentals**
-    * [RDS Overview](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/databases-fundamentals/rds.md)
+    * [RDS](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/databases-fundamentals/rds.md)
+    * [Amazon Aurora](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/databases-fundamentals/amazon-aurora.md)
 
     
 
