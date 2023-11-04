@@ -35,3 +35,53 @@
 * Advanced Monitoring
 * Routine Maintenance
 * Backtrack: Restore data at any point of time without using backups
+****
+
+**Aurora Replicas - Auto Scaling**
+![Aurora Replicas - Auto Scaling](images/aurora-replica-auto-scaling.png)
+
+**Custom Endpoints**
+
+* Define a subset of Aurora Instances as a Custom Endpoint
+* Example: Run analytical queries on specific replicas
+* The Reader Endpoint is generally not used after defining Custom Endpoints
+
+**Aurora Serverless**
+
+* Automated database instantiation and auto-scaling based on actual usage
+* Good for infrequent, intermittent or unpredictable workloads
+* No capacity planning needed
+* Pay per second, can be more cost-effective
+
+**Aurora Multi Master**
+
+* In case you want **continuous write avaliability** for the writer nodes
+* Every node does R/W - vs promotiong a Read Replica as the new master
+
+**Global Aurora**
+
+* **Aurora Cross Region Read Replicas**
+  * Useful for disaster recovery
+  * Simple to put in place
+* **Aurora Global Database (recommended)**
+  * 1 Primary Region (read/write)
+  * Up to 5 secondary (read only) regions, application lag is less than 1 second
+  * Up to 16 Read Replicas per secondary region
+  * Helps for decreasing latency
+  * Promoting another region (for disaster recovery) has an RTO of < 1 minute
+  * **Typical cross-region replication takes less than 1 second**
+
+**Aurora Machine Learning**
+
+* Enables you to add ML-based predictions to your applications via SQL
+* Simple, optimized, and secure integration between Aurora and AWS ML services
+* Supported Services:
+  * Amazon SageMaker (use with any ML model)
+  * Amazon Comprehend (for sentiment analysis)
+* You don't need to have ML experience
+* Use Cases:
+  * Fraud detection
+  * Ads Targeting
+  * Sentiment Analysis
+  * Product Recommendations
+  ****
