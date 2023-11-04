@@ -81,3 +81,18 @@
   * A new DB is restored from the snapshot in a new AZ
   * Synchronization is established between the two databases
 **** 
+
+**RDS Custom**
+
+* **Managed Oracke and Microsoft SQL Server Database with OS and database customization**
+* RDS Automates setup, operation and scaling of databases in AWS
+* Custom: access to the underlying database and OS sou you can:
+  * Configure settings
+  * Install Patches
+  * Enable native features
+  * Access the underlying EC2 instance using SSH or SSM Session Manager
+* **De-activate Automation Mode** to perform your customization better to take a DB snapshot before
+* RDS vs RDS Custom:
+  * RDS: Entire database and the OS to be managed by AWS
+  * RDS Custom: Full admin access to the underlying OS and the database
+**** 
