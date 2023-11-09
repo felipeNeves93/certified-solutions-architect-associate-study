@@ -113,3 +113,21 @@
   * When updates are made to the new DB Cluster data, then additional storage is allocated and data is copied to be separated
 * Very fast and cost effective
 * **Useful to create a Staging database from a production database without impacting the production database**
+* ****
+
+**RDS & Aurora Security**
+
+* **At-Rest encryption:**
+  * Database master and replicas encryption using AWS KMS - Must be defined as launch time
+  * If the master is not encrypted, the read replicas cannot be encrypted
+  * To encrypt an un-encrypted database, go through a DB snapshot & restore as encrypted
+* **In-FLight Encryptiuon:**
+  * TLS ready by default, use the AWS TLS root certificates client side
+* **IAM Authentication:**
+  * IAM Roles to connect to your database (instead of username/password)
+* **Security Groups:**
+  * Control network access to your RDS/Aurora DB
+* **No SSH Avaliable:**
+  * * Except on RDS Custom
+* **Audit Logd can be enabled**
+  * And sent to CloudWatch Logs for longer retention
