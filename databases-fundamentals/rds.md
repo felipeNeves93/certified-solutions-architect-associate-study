@@ -96,3 +96,26 @@
   * RDS: Entire database and the OS to be managed by AWS
   * RDS Custom: Full admin access to the underlying OS and the database
 **** 
+
+**RDS Backups**
+
+* **Automated Backups**
+  * Daily full backup of the database (during the backup window)
+  * Transaction logs are backed-up by RDS every 5 minutes
+  * Ability to restore to any point in time (From oldest backup to 5 minutes ago)
+  * 1 to 35 days of retention, set 0 to disable automated backups
+* **Manual DB Snapshots**
+  * Manually triggered by the user
+  * Retention of backup for as long as you want
+
+* **Trick** 
+  * In a stopped RDS database, you will still pay for storage. If you plan on stopping it for a long time, you should snapshot and restore instead 
+
+**Restore Options**
+
+* **Restoing an RDS/AURORA backup or a snapshot** creates a new database
+
+* **Restoring MySQL RDS Database from S3**
+  * Create a backup of your on-premises database
+  * Store it on Amazon S3 (Object storage)
+  * Restore the backup file onto a new RDS instance running MySQL
