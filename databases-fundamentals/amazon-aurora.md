@@ -129,5 +129,6 @@
   * Control network access to your RDS/Aurora DB
 * **No SSH Avaliable:**
   * * Except on RDS Custom
-* **Audit Logd can be enabled**
+* **Audit Log can be enabled**
   * And sent to CloudWatch Logs for longer retention
+
