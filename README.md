@@ -33,6 +33,7 @@ In this repo, i will upload my annotations about all the topics covered on the A
 * **Databases Fundamentals**
     * [RDS](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/databases-fundamentals/rds.md)
     * [Amazon Aurora](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/databases-fundamentals/amazon-aurora.md)
+    * [Amazon ElastiCache](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/databases-fundamentals/amazon-elasticache.md)
 
     
 
