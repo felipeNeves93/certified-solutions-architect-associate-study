@@ -57,3 +57,4 @@
 * Gaming Leaderborads are computationally complex
 * **Redis Sorted Sets** guarantee both uniqueness and element ordering
 * Each time a new element added, it's ranked in real time, then added in correct order
+* ****
