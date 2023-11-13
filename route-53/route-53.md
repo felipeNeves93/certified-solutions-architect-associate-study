@@ -54,3 +54,33 @@
   * Records are outdated for less time
   * Easy to change records
 * **Except for Alias records, TTL is mandatory for each DNS record**
+
+**CNAME vs ALIAS**
+
+* AWS resources (Load Balancer, Cloudfront, etc) expose an AWS Hostname
+  * *lb1-1234.us.east-2.elb.amazonaws.com* and you want *myapp.mydomain.com*
+* CNAME
+  * Points a hostname to any other hostname. (app.mydomain.com -> blablabla.anything.com)
+  * **Only for ROOT DOMAIN and NON ROOT DOMAIN  (aka mydomain.com)
+  * Free of charge
+  * Native health check
+
+**Alias Records**
+
+* Maps a hostname to an AWS resource
+* An extension to DNS functionality
+* Automatically recognizes changes in the resource's IP addresses
+* Unlike CNAME, it can be used for the top node of a DNS namespace (Zone Apex) e.g: example.comn
+* Alias Record is always of the type A/AAAA for AWS resources (IPv4, IPv6)
+
+**Alias Records Targets**
+
+* Elastic Load Balancers
+* CloudFront distributions
+* API Gateway
+* Elastic Beanstalk environments
+* S3 Websites
+* VPC interface endpoints
+* Global Accelerator accelerator
+* Route 53 record in the same hosted zone
+* **You cannot set an ALIAS record for an EC2 dns Name
