@@ -41,3 +41,16 @@
 * **Private Hosted Zones:**
   * Contains records that specify how you route traffic within one or more VPCS (private domain names)
   * *application1.company.internal
+
+**Records TTL (Time to Live)**
+
+* **High TTL:**
+  * 24 hr
+  * Less traffic on Route 53
+  * Possibly outdated records
+* **Low TTL:**
+  * 60 Sec
+  * More traffic on Route 53 ($$)
+  * Records are outdated for less time
+  * Easy to change records
+* **Except for Alias records, TTL is mandatory for each DNS record**
