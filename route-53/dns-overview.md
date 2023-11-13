@@ -18,3 +18,7 @@
 * **Name Server:** Resolves DNS queries (Authoritative or Non-Authoritative)
 * **Top Level Domain (TLD):** com, .us, .gov, .org
 * **Second Level Domain(SLD):** amazon.com, google.com
+
+**How DNS Works?**
+
+![How dns Works?](./images/dns-overview.png)
