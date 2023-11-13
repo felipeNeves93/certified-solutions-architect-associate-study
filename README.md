@@ -36,6 +36,7 @@ In this repo, i will upload my annotations about all the topics covered on the A
     * [Amazon ElastiCache](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/databases-fundamentals/amazon-elasticache.md)
 * **Route 53**
   * [DNS Overview](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/route-53/dns-overview.md)
+  * [Route 53](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/route-53/route-53.md)
 
     
 
