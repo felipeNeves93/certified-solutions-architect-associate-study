@@ -102,8 +102,22 @@
 
 **Routing Policies - Simple**
 
-* Typically route traffic to a single resource
-* Can specify multiple values in the same record
-* **If multiple values are returned, a random one is chosen by the client**
-* When Alias enabled, specify only one AWS resource
-* Can't be associated with Health Checks
+  * Typically route traffic to a single resource
+  * Can specify multiple values in the same record
+  * **If multiple values are returned, a random one is chosen by the client**
+  * When Alias enabled, specify only one AWS resource
+  * Can't be associated with Health Checks
+
+**Routing Policies - Weighted**
+
+  * Control the % of the requests that go to each specific resource
+  * Assign each record a relative weight
+    * **Traffic (%) = wheight for a specific record/Sum of all the weights for all the records**
+    * Weights don't need to sum up to 100
+  * DNS Records must have the same name and type
+  * Can be associated with Health Checks
+  * Use cases: 
+    * Load balancing between regions
+    * testing new application versions
+  * **Assign a weight of 0 to a record to stop reading traffic to a resource**
+  * **If all records have weight of 0, then all records will be returned equally**
