@@ -129,3 +129,40 @@
   * **Latency is based on traffic between users and AWS regions** 
   * Germany users may be directed to the US (if that's the lowest latency)
   * Can be associated with health checks (has a failover capability)
+
+**Health Checks**
+
+  * HTTP Health Checks are only for **public resources**
+  * Health Check - Automated DNS failover
+    * Health checks that monitor an endpoint (Application, servers, other AWS resources)
+    * Health Checks that monitor other health checks (Calculated Health Checks)
+    * Health checks that monitor CloudWatch Alarms (full control) e.g. throttles of DynamoDB,
+    alarms on RDS, custom metrics... helpfull for private resources
+  * Health Checks are integrated with CW metrics
+   
+**Health Checks - Monitor an endpoint**
+
+* **About 15 Global Health Checkers will check the endpoint health**
+  * Healthy/Unhealthy Threshold - 3 (default)
+  * Interval - 30 sec (Can set to 10 sec - higher cost)
+  * Supported protocol: HTTP, HTTPS and TCP
+  * IF > 18% of health checkers report the endpoint is healthy, Route 53 considers **Healthy**
+  * Otherwise is considered **Unhealthy**
+  * Ability to choose which location you want Route53 to use
+* Health Checks pass only when the endpoint responds with the 2xx and 3xx status codes
+* Health Checks can be setup to fail/pass based on the text in the first **5120 bytes** of the response
+* Configure your router/firewall to allow incoming requests from Route53 Health Checkers
+
+**Calculated Health Checks**
+
+* Combine the results of multiple Health Checks into a single Health Check
+* You can use **OR, END,** or **NOT**
+* Can monitor up to 256 child health checks
+* Specify how many health checks need to pass to make the parent pass
+* Usage: Perform maintenance to your website without causing all health checks to fail
+
+**Health Checks - Private Hosted Zones**
+
+* Route53 Health Checkers are outside the VPC
+* They can't access **private** endpoints (private VPC or on-permisse resources)
+* You can create a **CloudWatch metric** and associate a **CloudWatch Alarm**, then create a health check that checks the alarm itself 
