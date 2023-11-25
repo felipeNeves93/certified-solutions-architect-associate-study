@@ -37,6 +37,7 @@ In this repo, i will upload my annotations about all the topics covered on the A
 * **Route 53**
   * [DNS Overview](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/route-53/dns-overview.md)
   * [Route 53](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/route-53/route-53.md)
+  * [Routing Policy](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/route-53/routing-policy.md)
 
     
 
