@@ -121,3 +121,11 @@
     * testing new application versions
   * **Assign a weight of 0 to a record to stop reading traffic to a resource**
   * **If all records have weight of 0, then all records will be returned equally**
+
+**Routing Policies - Latency based**
+
+  * Redirect to the resource that has the least latency close to us
+  * Super helpful when latency to users is a priority
+  * **Latency is based on traffic between users and AWS regions** 
+  * Germany users may be directed to the US (if that's the lowest latency)
+  * Can be associated with health checks (has a failover capability)
