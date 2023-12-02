@@ -42,6 +42,8 @@ In this repo, i will upload my annotations about all the topics covered on the A
   *  [Whats the Time Architecture](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/solutions-architecture/whats-the-time-architecture.md)
   *  [My Clothes.com Architecture](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/solutions-architecture/my-clothes-com-architecture.md)
   *  [My Wordpress Architecture](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/solutions-architecture/my-wordpress-architecture.md)
+  *  [How to Instantiate applications quickly](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/solutions-architecture/instantiate-applications-quickly.md)
+
 
 
 
