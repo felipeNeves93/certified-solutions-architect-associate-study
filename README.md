@@ -38,6 +38,8 @@ In this repo, i will upload my annotations about all the topics covered on the A
   * [DNS Overview](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/route-53/dns-overview.md)
   * [Route 53](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/route-53/route-53.md)
   * [Routing Policy](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/route-53/routing-policy.md)
+* **Solutions Architecture**
+  *  [Whats the Time](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/solutions-architecture/whats-the-time.md)
 
     
 
