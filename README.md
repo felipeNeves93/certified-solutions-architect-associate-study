@@ -43,6 +43,8 @@ In this repo, i will upload my annotations about all the topics covered on the A
   *  [My Clothes.com Architecture](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/solutions-architecture/my-clothes-com-architecture.md)
   *  [My Wordpress Architecture](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/solutions-architecture/my-wordpress-architecture.md)
   *  [How to Instantiate applications quickly](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/solutions-architecture/instantiate-applications-quickly.md)
+  * [Elastic Beanstalk](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/solutions-architecture/elastic-beanstalk.md)
+
 
 
 
