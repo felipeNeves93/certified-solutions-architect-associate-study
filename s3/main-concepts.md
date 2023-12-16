@@ -57,3 +57,15 @@
 * The website URL will be (depending on the region)
   * http://bucket-name.s3-website.aws.region.amazonaws.com
 * If you get a **403 Forbidden** error, make sure the bucket policy allows public reads!
+
+### Versioning 
+
+* You can version your files in Amazon S3
+* It is enabled at the **bucket level**
+* Same key overwite will change the "version": 1,2,3
+* It is best practice to version your buckets
+  * Protect against unintended deletes (ability to restore a version)
+  * Easy roll back to previous version
+* Notes:
+  * Any file that is not versioned prior to enabling versioning will have version "null"
+  * suspending versioning does not delete the previous version
