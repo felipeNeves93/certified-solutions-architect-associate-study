@@ -81,3 +81,13 @@
 * Use Cases:
   * **CRR:** Compliance, lower latency access, replication across accounts
   * **SRR:** Log aggregation, live replication between production and test accounts
+* After you enable Replication, only new objects are replicated
+* Optionally, you can replicate existing objects using **S3 Batch Replication**
+  * Replicates existing objects and objects that failed replication
+
+* For DELETE operations
+  * **Can replicate delete markers** from source to target (optional setting)
+  * Deletions with a version ID are not replicated (to avoid malicious deletes)
+* **There is no "chaining" of replication**
+  * If bucket 1 has replication into bucket 2, which has replication into bucket 3
+  * Then, objects created in buycket 1 are not replicated to bucket 3
