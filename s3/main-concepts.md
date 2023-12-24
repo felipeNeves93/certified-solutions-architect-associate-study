@@ -69,3 +69,15 @@
 * Notes:
   * Any file that is not versioned prior to enabling versioning will have version "null"
   * suspending versioning does not delete the previous version
+
+### Replication
+
+* **Must enable versioning** in source and destination buckets
+* **Cross Region replication (CRR)**
+* **Same Region Replication (SRR)**
+* Buckets can be in different AWS accounts
+* Copying is Asyncrhonus
+* Must give proper IAM permissions to S3
+* Use Cases:
+  * **CRR:** Compliance, lower latency access, replication across accounts
+  * **SRR:** Log aggregation, live replication between production and test accounts
