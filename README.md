@@ -47,6 +47,7 @@ In this repo, i will upload my annotations about all the topics covered on the A
 * **S3**
   * [Overview](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/s3/overview.md)
   * [Main Concepts](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/s3/main-concepts.md)
+  * [Advanced Concepts](https://github.com/felipeNeves93/certified-solutions-architect-associate-study/blob/master/s3/advanced-concepts.md)
 
 
 
